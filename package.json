@@ -1,0 +1,35 @@
+{
+  "name": "nroxy",
+  "version": "0.0.1",
+  "description": "nodejs proxy server and agent, like ngrok",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Qiaosen Huang",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "socket.io": "^1.4.8",
+    "socket.io-client": "^1.4.8",
+    "winston": "^2.2.0"
+  },
+  "bin": {
+    "nroxy-server": "./bin/nroxy-server",
+    "nroxy-client": "./bin/nroxy-client"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joesonw/nroxy.git"
+  },
+  "keywords": [
+    "ngrok",
+    "proxy"
+  ],
+  "bugs": {
+    "url": "https://github.com/joesonw/nroxy/issues"
+  },
+  "homepage": "https://github.com/joesonw/nroxy#readme"
+}

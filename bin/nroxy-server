@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+'use strict';
+const program = require('commander');
+const server = require('../server');
+
+program
+    .option('-l, --listen [listen]', 'Listen on port')
+    .option('-h, --host [host]', 'Host port, used for client connection')
+    .parse(process.argv);
+
+server(program);

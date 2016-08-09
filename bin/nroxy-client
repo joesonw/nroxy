@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+'use strict';
+const program = require('commander');
+const client = require('../client');
+
+program
+    .option('-p, --port [listen]', 'forward port to')
+    .option('-h, --host [host]', 'remote host post')
+    .parse(process.argv);
+
+client(program);
